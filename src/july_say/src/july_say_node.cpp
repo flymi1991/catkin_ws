@@ -1,4 +1,4 @@
-#include "ros/ros.h"
+	#include "ros/ros.h"
 #include "std_msgs/String.h"
 #include <sstream>
 
@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 	while (ros::ok())
 	{
 		std_msgs::String msg;
-		std:stringstream ss;
+		std::stringstream ss;
 		ss << "hello world " << count;
 		count++;
 		msg.data = ss.str();
